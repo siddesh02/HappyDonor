@@ -9,7 +9,7 @@ Can post or create your own blood donation requirements.
 
 
 SCREENSHOTS
-<p float="left">
+<p width="150" height="150">
 <img src="https://user-images.githubusercontent.com/92852926/178344092-cdbfd4dc-55d4-41f4-8ec2-8db0b92124db.png">
 <img src="https://user-images.githubusercontent.com/92852926/178344096-5dd5f13a-a2ae-4898-ba47-555aff547e25.png">
 <img src="https://user-images.githubusercontent.com/92852926/178344099-02b8ef97-a3a0-4d19-bd7a-076599496d0f.png">
