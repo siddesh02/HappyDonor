@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashboardActivity">
+
+    <include
+        android:id="@+id/toolbarDashboard"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Your Status :"
+        android:textStyle="italic|bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtEligibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:text="You are currently not eligible for donation!"
+        android:textAlignment="center"
+        android:textColor="@color/greenok"
+        android:textStyle="bold" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtYourLastDonated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Last donated on : "
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txtYourLastDonatedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="01-01-2001"
+            android:textColor="@color/red"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtYourCamps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Donation Camps organised by you"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/link_color"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txtYourPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Posts"
+        android:textColor="@color/link_color"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

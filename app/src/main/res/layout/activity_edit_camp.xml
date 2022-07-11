@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".EditCampActivity">
+
+    <include
+        android:id="@+id/toolbarEditCamp"
+        layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/edtEditCampOrgBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textStyle="italic|bold"
+        android:drawableStart="@drawable/ic_baseline_date_range_24"
+        android:paddingStart="10dp"
+        android:drawablePadding="8dp"
+        android:background="@drawable/stroke"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Organized By"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txtEditCampDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_baseline_date_range_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:textStyle="bold|italic"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:text="Camp Date"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtEditCampDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/stroke"
+            android:ems="10"
+            android:hint="   1/1/2021"
+            android:inputType="date"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txtEditCampTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_outline_access_time_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:textStyle="bold|italic"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:text="Camp Time"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtEditCampTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/stroke"
+            android:ems="10"
+            android:hint="   09:30 AM"
+            android:inputType="text"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtEditCampVanue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic|bold"
+        android:drawableStart="@drawable/ic_baseline_place_24"
+        android:paddingStart="10dp"
+        android:drawablePadding="8dp"
+        android:background="@drawable/stroke"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Venue"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtEditCampContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic|bold"
+        android:drawableStart="@drawable/ic_baseline_contacts_24"
+        android:paddingStart="10dp"
+        android:drawablePadding="8dp"
+        android:background="@drawable/stroke"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Contact Name [Phone No]"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtEditCampLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic|bold"
+        android:drawableStart="@drawable/ic_baseline_link_24"
+        android:paddingStart="10dp"
+        android:drawablePadding="8dp"
+        android:background="@drawable/stroke"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Registration Link (Optional)"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txtEditCampError"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnEditCamp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/forbuttons"
+        android:backgroundTint="@color/crimpson"
+        android:elevation="10dp"
+        android:hint="Edit Camp"
+        android:textColorHint="@color/white"
+        android:textStyle="bold|italic" />
+</LinearLayout>

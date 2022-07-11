@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:padding="2dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:hint="Donor"
+            android:textColorHint="@color/black"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txtDonorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColorHint="@color/grey"
+            android:hint="Name : "
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDonorBloodGrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDonorName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Blood Type : "
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDonorArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDonorBloodGrp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Area : "
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDonorAlternatePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDonorArea"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Alternate Contact : "
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDonorEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDonorAlternatePhone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Email : "
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDonorLastDonated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDonorEmail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Last Donated : "
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDonorCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/forbuttons"
+                android:backgroundTint="@color/crimpson"
+                android:elevation="10dp"
+                android:hint="Call"
+                android:textColorHint="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

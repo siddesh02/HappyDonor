@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".EditPostActivity"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarEditPost"
+            layout="@layout/toolbar" />
+
+        <EditText
+            android:id="@+id/edtEditPostPatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic|bold"
+            android:drawableStart="@drawable/ic_outline_person_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/stroke"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="Patient Name"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txtEditPostBloodGrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="150dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_baseline_bloodtype_24"
+                android:drawablePadding="8dp"
+                android:paddingStart="10dp"
+                android:textStyle="italic|bold"
+                android:text="Blood Group"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spnEditPostBlood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-240dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txtEditPostShowDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_baseline_date_range_24"
+                android:paddingStart="10dp"
+                android:drawablePadding="8dp"
+                android:textStyle="italic|bold"
+                android:text="Last Date"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edtEditPostLastDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stroke"
+                android:ems="10"
+                android:hint="   1/1/2021"
+                android:inputType="date"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtEditPostHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="italic|bold"
+            android:drawableStart="@drawable/ic_baseline_local_hospital_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/stroke"
+            android:ems="10"
+            android:hint="Hospital Name And Address"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/edtEditPostDonorsNeeded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stroke"
+                android:drawableStart="@drawable/ic_outline_person_24"
+                android:drawablePadding="3dp"
+                android:ems="10"
+                android:hint="Donors Needed"
+                android:inputType="text"
+                android:paddingStart="5dp"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/edtEditPostDonorsGot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stroke"
+                android:drawableStart="@drawable/ic_outline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Donors Got"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtEditPostContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="italic|bold"
+            android:drawableStart="@drawable/ic_baseline_contacts_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/stroke"
+            android:hint="Contact No."
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/edtEditPostPostedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="italic|bold"
+            android:drawableStart="@drawable/ic_baseline_label_important_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/stroke"
+            android:hint="Posted By"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/txtEditPostError"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/red"
+            android:textSize="15sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnEditPost"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/forbuttons"
+            android:backgroundTint="@color/crimpson"
+            android:elevation="10dp"
+            android:hint="Edit Post"
+            android:textColorHint="@color/white"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+</ScrollView>

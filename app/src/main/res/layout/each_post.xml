@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="2dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:id="@+id/txtDonorsNeeded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:hint="Donors Needed : "
+            android:textColor="@color/crimpson"
+            android:textColorHint="@color/crimpson"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txtBloodGrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtDonorsNeeded"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-26dp"
+            android:hint="Blood Type : "
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtPatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtBloodGrp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="-20dp"
+            android:hint="Patient Name :"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtLastDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtPatient"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="-20dp"
+            android:hint="Last Date : "
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtLastDate"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="-20dp"
+            android:hint="Hospital Name : "
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDonotsGot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtHospital"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="-20dp"
+            android:hint="Donors Got : "
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtPosted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtDonotsGot"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="-22dp"
+            android:hint="Posted by...."
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/forbuttons"
+                android:backgroundTint="@color/crimpson"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:hint="Edit"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnDeletePost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/forbuttons"
+                android:backgroundTint="@color/crimpson"
+                android:elevation="10dp"
+                android:hint="Delete"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDonate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="54dp"
+                android:background="@drawable/forbuttons"
+                android:backgroundTint="@color/crimpson"
+                android:elevation="10dp"
+                android:hint="Donate"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

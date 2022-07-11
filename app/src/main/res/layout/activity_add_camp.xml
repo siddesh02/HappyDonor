@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".AddCampActivity">
+
+    <include
+        android:id="@+id/toolbarAddCamp"
+        layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/edtAddCampOrgBy"
+        android:layout_width="match_parent"
+        android:textStyle="italic|bold"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_organisation_24"
+        android:paddingStart="10dp"
+        android:drawablePadding="8dp"
+        android:background="@drawable/stroke"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Organized By"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txtAddCampDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="italic|bold"
+            android:drawableStart="@drawable/ic_baseline_date_range_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:layout_weight="1"
+            android:text="Camp Date"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtAddCampDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/stroke"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint=" 1/1/2010"
+            android:inputType="date"
+            android:paddingStart="10dp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txtAddCampTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:drawableStart="@drawable/ic_outline_access_time_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic|bold"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:text="Camp Time"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtAddCampTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/stroke"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint=" 09:30 AM"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtAddCampVenue"
+        android:layout_width="match_parent"
+        android:drawableStart="@drawable/ic_baseline_place_24"
+        android:paddingStart="10dp"
+        android:drawablePadding="8dp"
+        android:textStyle="italic|bold"
+        android:background="@drawable/stroke"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Venue"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtAddCampContact"
+        android:layout_width="match_parent"
+        android:drawableStart="@drawable/ic_baseline_contacts_24"
+        android:paddingStart="10dp"
+        android:drawablePadding="8dp"
+        android:background="@drawable/stroke"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Contact No."
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtAddCampLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_baseline_link_24"
+        android:paddingStart="10dp"
+        android:drawablePadding="8dp"
+        android:background="@drawable/stroke"
+        android:textStyle="italic|bold"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Registration Link (Optional)"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txtCampError"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnAddCamp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/forbuttons"
+        android:backgroundTint="@color/crimpson"
+        android:elevation="10dp"
+        android:hint="Post Camp"
+        android:textColorHint="@color/white"
+        android:textStyle="italic|bold" />
+
+</LinearLayout>

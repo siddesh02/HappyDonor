@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".RegisterActivity">
+
+        <ImageView
+            android:id="@+id/loginLogo"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/logo_noname" />
+
+
+        <TextView
+            android:id="@+id/txtRegisterRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:hint="Register"
+            android:textColor="@color/crimpson"
+            android:textColorHint="@color/crimpson"
+            android:textSize="30sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="2dp"
+            android:hint="Please Sign Up to continue"
+            android:textColorHint="@color/black"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/edtRegisterPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/stroke"
+            android:drawableStart="@drawable/ic_baseline_name_2_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/edtRegisterPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/stroke"
+            android:drawableStart="@drawable/ic_baseline_contacts_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Mobile No."
+            android:inputType="phone"
+            android:paddingStart="10dp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/edtRegisterAlternatePhone"
+            android:layout_width="match_parent"
+            android:background="@drawable/stroke"
+            android:textStyle="italic|bold"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:drawableStart="@drawable/ic_baseline_local_phone_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:hint="Alternate Mobile No."
+            android:inputType="phone"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtRegisterArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/ic_baseline_place_24"
+                android:text="Area"
+                android:textSize="18sp"
+                android:textStyle="italic|bold" />
+
+            <Spinner
+                android:id="@+id/spnRegisterArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtRegisterBloodGrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/ic_baseline_bloodtype_24"
+                android:text="Blood group"
+                android:textSize="18sp"
+                android:textStyle="italic|bold" />
+
+            <Spinner
+                android:id="@+id/spnRegisterBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtRegisterLastDonated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_baseline_date_range_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Last Donated On"
+            android:background="@drawable/stroke"
+            android:inputType="date"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:drawableStart="@drawable/ic_baseline_mail_outline_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:hint="Email"
+            android:background="@drawable/stroke"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edtRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textStyle="italic|bold"
+            android:drawableStart="@drawable/ic_outline_lock_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/stroke"
+            android:hint="Password"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/edtRegisterConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="italic|bold"
+            android:background="@drawable/stroke"
+            android:drawableStart="@drawable/ic_baseline_lock_open_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/txtError"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/red"
+            android:textStyle="italic|bold"
+            android:textSize="15sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnRegisterRegister"
+            android:layout_width="180dp"
+            android:layout_height="55dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/forbuttons"
+            android:backgroundTint="@color/crimpson"
+            android:elevation="10dp"
+            android:hint="Signup"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/gotologin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Already have an account? Sign In"
+            android:textColor="@color/link_color"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+</ScrollView>

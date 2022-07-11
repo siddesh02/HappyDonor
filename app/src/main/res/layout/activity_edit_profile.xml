@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".EditProfileActivity">
+
+
+        <include
+            android:id="@+id/toolbarEditProfile"
+            layout="@layout/toolbar2" />
+
+        <EditText
+            android:id="@+id/edtEditPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/stroke"
+            android:drawableStart="@drawable/ic_baseline_name_2_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/edtEditPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="italic|bold"
+            android:drawableStart="@drawable/ic_baseline_contacts_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/stroke"
+            android:hint="Mobile No."
+            android:inputType="phone"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/edtEditAlternatePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic|bold"
+            android:ems="10"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:drawableStart="@drawable/ic_baseline_local_phone_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/stroke"
+            android:hint="Alternate Mobile No."
+            android:inputType="phone"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtEditArea"
+                android:layout_width="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_place_24"
+                android:drawablePadding="8dp"
+                android:textStyle="italic|bold"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:text="Area"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:id="@+id/spnEditArea"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtEditBloodGrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/ic_baseline_bloodtype_24"
+                android:drawablePadding="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Blood group"
+                android:textSize="17sp"
+                android:textStyle="italic|bold" />
+
+            <Spinner
+                android:id="@+id/spnEditBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtEditLastDonated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+
+            android:drawableStart="@drawable/ic_baseline_date_range_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/stroke"
+            android:textStyle="italic|bold"
+            android:hint="Last Donated On"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:inputType="date"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtEditEmail"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Email"
+            android:textStyle="italic|bold"
+            android:drawableStart="@drawable/ic_baseline_mail_outline_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/stroke"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edtEditPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic|bold"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:drawableStart="@drawable/ic_outline_lock_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/stroke"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/edtEditConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:textStyle="italic|bold"
+            android:drawableStart="@drawable/ic_baseline_lock_open_24"
+            android:paddingStart="10dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/stroke"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/txtError1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/red"
+            android:textSize="15sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/forbuttons"
+            android:backgroundTint="@color/crimpson"
+            android:elevation="10dp"
+            android:hint="Edit Profile"
+            android:textColorHint="@color/white"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+</ScrollView>

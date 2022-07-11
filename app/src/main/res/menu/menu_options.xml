@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:checkable="false"
+        android:icon="@drawable/ic_outline_home_24"
+        android:title="Home"
+        app:showAsAction="withText" />
+
+    <item
+        android:checkable="false"
+        android:id="@+id/none"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_outline_person_24"/>
+
+</menu>

@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Happy Donor</string>
+
+    <string name="benefits1">
+        Blood donation is a voluntary procedure that can help save the lives of others.
+    </string>
+
+    <string name="benefits2">
+        There are several types of blood donation. Each type helps meet different medical needs.
+    </string>
+
+    <string name="benefits3">
+        This is the most common type of blood donation, during which you donate about a pint (about half a liter) of whole blood.
+    </string>
+
+    <string name="benefits4">
+        The blood is then separated into its components — red cells, plasma and sometimes platelets.
+    </string>
+
+    <string name="benefits5">
+       During apheresis, you are hooked up to a machine that can collect and separate blood components, including red cells, plasma and platelets, and return unused components back to you.
+    </string>
+
+    <string name="benefits6">
+        Blood donation is safe. New, sterile disposable equipment is used for each donor, so there\'s no risk of contracting a bloodborne infection by donating blood.
+    </string>
+
+    <string name="benefits7">
+        If you\'re a healthy adult, you can usually donate a pint (about half a liter) of blood without endangering your health. Within a few days of a blood donation, your body replaces the lost fluids. And after two weeks, your body replaces the lost red blood cells.
+    </string>
+
+    <string name="benefits8">
+        At least 16 or 17 years old, depending on the law in your state. Some states allow legal minors to donate with parent permission. While there\'s no legal upper age limit, policies may vary between individual donor centers.
+    </string>
+
+    <string name="benefits9">
+        At least 110 pounds (about 50 kilograms).
+    </string>
+
+    <string name="benefits10">
+        Able to pass the physical and health-history assessments.
+    </string>
+
+    <string name="benefits11">
+        Get plenty of sleep the night before you plan to donate.
+    </string>
+
+    <string name="benefits12">
+        Eat a healthy meal before your donation. Avoid fatty foods, such as a hamburger, fries or ice cream.
+    </string>
+
+    <string name="benefits13">
+        Drink plenty of water before the donation.
+    </string>
+
+    <string name="benefits14">
+        Check to see if any medications you are taking or recently took would prevent you from donating. For example, if you are a platelet donor, you must not take aspirin for two days prior to donating. Talk to your doctor before discontinuing any medications.
+    </string>
+
+    <string name="benefits15">
+        Drink extra fluids.
+    </string>
+
+    <string name="benefits16">
+        Avoid strenuous physical activity or heavy lifting for about five hours.
+    </string>
+
+    <string name="benefits17">
+        Keep your bandage on and dry for the next five hours.
+    </string>
+
+    <string name="benefits18">
+        Consider adding iron-rich foods to your diet to replace the iron lost with blood donation.
+    </string>
+
+    <string name="benefits19">
+        If you have bleeding after removing the bandage, put pressure on the site and raise your arm until the bleeding stops.
+    </string>
+
+    <string name="benefits20">
+        If bruising occurs, apply a cold pack to the area periodically during the first 24 hours.
+    </string>
+
+    <string-array name="area">
+        <item>Margao</item>
+        <item>Vasco</item>
+        <item>Ponda</item>
+        <item>Panaji</item>
+        <item>Valpoi</item>
+        <item>Marcel</item>
+        <item>Sanquelim</item>
+        <item>Bicholim</item>
+        <item>Assonora</item>
+        <item>Mapusa</item>
+
+    </string-array>
+
+    <string-array name="bloodgroup">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_token_fmt">hello</string>
+
+</resources>
