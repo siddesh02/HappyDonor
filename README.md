@@ -3,8 +3,7 @@
 </p>
 
 # HAPPYDONOR
-
-<p style="font-family: consolas">HappyDonor is a simple blood donation app. For people in emergencies who need donors urgently. Can contact directly to the person in this app.</p>
+HappyDonor is a simple blood donation app. For people in emergencies who need donors urgently. Can contact directly to the person in this app.
 
 ## Screenshots
 
